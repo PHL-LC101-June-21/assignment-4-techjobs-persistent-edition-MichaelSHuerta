@@ -28,6 +28,7 @@ public class SearchController {
     }
 
     @PostMapping("results")
+    //@PostMapping->shortcut to requestMapping
     public String displaySearchResults(Model model, @RequestParam String searchType, @RequestParam String searchTerm){
         Iterable<Job> jobs;
         if (searchTerm.toLowerCase().equals("all") || searchTerm.equals("")){

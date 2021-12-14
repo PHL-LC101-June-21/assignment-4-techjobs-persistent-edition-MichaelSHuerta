@@ -10,3 +10,5 @@ import javax.transaction.Transactional;
 @Transactional
 public interface JobRepository extends CrudRepository<Job, Integer> {
 }
+//Extend CrudRepository/interface that extends spring data repository interface
+//CRUD Delete Create Update Read
